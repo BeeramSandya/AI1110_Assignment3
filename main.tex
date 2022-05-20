@@ -1,0 +1,55 @@
+% Inbuilt themes in beamer
+\documentclass{beamer}
+
+% Theme choice:
+\usetheme{CambridgeUS}
+
+% Title page details: 
+\title{Assignment 3} 
+\author{Beeram Sandya cs21btech11006}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+% Title page frame
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+% Remove logo from the next slides
+\logo{}
+
+
+% Outline frame
+\begin{frame}{Outline}
+    \tableofcontents
+\end{frame}
+
+
+% Lists frame
+\section{Question}
+\begin{frame}{Question}
+\begin{block}{Papoulis ch2 example 2.12}
+A box contains three white balls w1,w2 and w3 and two red balls r1 and r2. We remove at random two balls in succession. What is the probability that the first removed ball is white and second is red?
+\end{block}
+\end{frame}
+
+
+% Blocks frame
+\section{Solution}
+\begin{frame}{Solution}
+    
+Let $ W_1 $= \{white ball first\}\\
+   $ R_2$ = \{red ball second\}\\
+    As we have 3 white balls and 2 red balls,\\
+    $Pr\left(W_1\right) = \frac{3}{5}$\\
+    Now as one white ball is removed, we have 2 white and 2 red balls.\\
+    $Pr\left(\frac{R_2}{W_1}\right) = \frac{2}{4}$\\
+    $Pr\left(W_1R_2\right)=Pr\left(\frac{R_2}{W_1}\right){Pr\left(W_1\right)}=\frac{2}{4}\times\frac{3}{5}=\frac{6}{20}=\frac{3}{10}$
+
+    
+\end{frame} 
+
+\end{document}
